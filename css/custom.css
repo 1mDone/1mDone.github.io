@@ -287,9 +287,16 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	top: 0px;
 	left: 0;
 	width: 100%;
-	background: url(../images/header.png) no-repeat bottom left;
 	background-size: auto 100%;
 	padding: 200px 0 100px;
+}
+
+.no-webp .banner {
+	background: url(../images/header.png) no-repeat bottom left;
+}
+
+.webp .banner {
+	background: url(../images/header.webp) no-repeat bottom left;
 }
 
 .banner:before{
