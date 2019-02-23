@@ -282,17 +282,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 /*****   03. Slider area css    *****/
 /************************************/
 
-.no-webp .banner{
-	position: relative;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	background-size: auto 100%;
-	padding: 200px 0 100px;
-	background: url(../images/header.png) no-repeat bottom left;
-}
-
-.webp .banner{
+.banner{
 	position: relative;
 	top: 0px;
 	left: 0;
@@ -300,6 +290,10 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	background-size: auto 100%;
 	padding: 200px 0 100px;
 	background: url(../images/header.webp) no-repeat bottom left;
+}
+
+.no-webp .banner {
+	background: url(../images/header.png) no-repeat bottom left;
 }
 
 
