@@ -291,11 +291,11 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	padding: 200px 0 100px;
 }
 
-.no-webp .banner {
+.no-webp .banner-img {
 	background: url(../images/header.png) no-repeat bottom left;
 }
 
-.webp .banner {
+.webp .banner-img {
 	background: url(../images/header.webp) no-repeat bottom left;
 }
 
