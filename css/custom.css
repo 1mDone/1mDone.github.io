@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6{
-	font-family: 'ProximaNova', 'Signika', sans-serif;
+	font-family: 'ProximaNova', sans-serif;
 	margin-top:0;
 	font-weight: 700;
 }
@@ -507,8 +507,12 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: url(../images/service-left.png) no-repeat left bottom, url(../images/service-right.png) no-repeat right bottom;
+	background: url(../images/service-left.webp) no-repeat left bottom, url(../images/service-right.webp) no-repeat right bottom;
 	background-size: 320px auto, 280px auto;
+}
+
+.no-webp .services:before {
+	background: url(../images/service-left.png) no-repeat left bottom, url(../images/service-right.png) no-repeat right bottom;
 }
 
 .services-container{
