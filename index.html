@@ -918,6 +918,20 @@
 			s.parentNode.insertBefore(wf, s);
 	 	})(); 
 	</script>
+
+	<!-- Fix Styles For Firefox -->
+	<script type="text/javascript">
+		(function() {
+			if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+				var links = document.getElementsByTagName('link');
+				for (var i = 0; i < links.length; i++) {
+					if (links[i].as == 'style') {
+						document.getElementsByTagName('link')[i].rel = 'stylesheet';
+					}
+				}
+			}
+	 	})(); 
+	</script>
 	
     <!-- jQuery Library File -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -934,13 +948,6 @@
 	<script src="js/SmoothScroll.js"></script>
     <!-- Main Custom js file -->
 	<script src="js/function.js"></script>
-	<!-- Fix Styles For Firefox -->
-	<script type="text/javascript">
-		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-			$('link').each(() => {
-				this.rel = this.as == 'style' ? 'stylesheet' : this.rel;
-			});
-		}
-	</script>
+
 </body>
 </html>
