@@ -55,9 +55,6 @@
 </head>
 <body>
 
-	<!-- Google Fonts css-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet" lazyload>
-	
 	<!-- Preloader starts -->
 	<div class="preloader">
 		<span class="loader">
@@ -911,6 +908,21 @@
 		</div>
 	</footer>
 	<!-- Footer section ends -->
+
+	<!-- Loading Google Fonts-->
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Montserrat:300,400,500,600,700,800,900' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+	 	})(); 
+	</script>
 	
     <!-- Jquery Library File -->
 	<script src="js/jquery-1.12.4.min.js"></script>

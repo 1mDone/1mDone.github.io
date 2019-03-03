@@ -25,7 +25,7 @@
 /************************************/
 
 @font-face {
-  font-family: 'ProximaNova', sans-serif;
+  font-family: 'ProximaNova';
   font-display: auto;
   src: local('ProximaNova'), url('../fonts/ProximaNova.woff2') format('woff2');
 }
