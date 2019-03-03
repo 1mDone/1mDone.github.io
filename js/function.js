@@ -35,6 +35,12 @@
 			}
 		}
 	});
+
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		$('link').each(() => {
+			this.rel = this.as == 'style' ? 'stylesheet' : this.rel;
+		});
+	};
 	
 	/* Animate with wow js */
     new WOW({mobile:false}).init(); 
