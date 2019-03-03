@@ -36,12 +36,15 @@
 		}
 	});
 
-	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-		$('link').each(() => {
-			this.rel = this.as == 'style' ? 'stylesheet' : this.rel;
-		});
-	};
+	function fix_style_preload() {
+		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+			$('link').each(() => {
+				this.rel = this.as == 'style' ? 'stylesheet' : this.rel;
+			});
+		}
+	}
 	
+	fix_style_preload();
 	/* Animate with wow js */
     new WOW({mobile:false}).init(); 
 	
