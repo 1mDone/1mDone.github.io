@@ -34,6 +34,7 @@
 	</script>
 	<!-- Page Title -->
 	<title>Hi, Honey! Мёд в СПБ!</title>
+
 	<!-- Bootstrap css -->
 	<link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
 	<link rel="preload" href="css/bootsnav.css" as="style" onload="this.rel='stylesheet'">
@@ -933,5 +934,13 @@
 	<script src="js/SmoothScroll.js"></script>
     <!-- Main Custom js file -->
 	<script src="js/function.js"></script>
+	<!-- Fix Styles For Firefox -->
+	<script type="text/javascript">
+		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+			$('link').each(() => {
+				this.rel = this.as == 'style' ? 'stylesheet' : this.rel;
+			});
+		}
+	</script>
 </body>
 </html>
