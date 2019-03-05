@@ -417,20 +417,16 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 }
 
 .section-title h2 span{
+	background-image: linear-gradient(120deg, #ffc600 0%, #ffc600 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.15em;
+	background-position: 0 74%;
 	position: relative;
 	z-index: 1;
 }
 
-.section-title h2 span:before{
-	content: '';
+.break-me-pls {
 	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 13px;
-	height: 8px;
-	background: #ffc600;
-	z-index: -1;
 }
 
 .section-title p{
@@ -997,6 +993,10 @@ footer{
 		height: 6px;
 		bottom: 10px;
 	}
+
+	.break-me-pls {
+		display: none;
+	}
 	
 	.services:before{
 		opacity: 0.2;
@@ -1034,6 +1034,10 @@ footer{
 	.section-title h2 span:before{
 		height: 4px;
 		bottom: 8px;
+	}
+
+	.break-me-pls {
+		display: none;
 	}
 	
 	.section-title p br{
