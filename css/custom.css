@@ -356,14 +356,14 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	padding: 4px 0;
 }
 
-.header-content h2{
+.header-content h1{
 	color: #f8b634;
 	font-size: 50px;
 	margin-bottom: 20px;
 	line-height: 1.4em;
 }
 
-.header-content h2 span{
+.header-content h1 span{
 	background: #fff;
 	padding: 0 10px;
 }
@@ -985,7 +985,7 @@ footer{
 		padding-right: 0;
 	}
 	
-	.header-content h2{
+	.header-content h1{
 		font-size: 36px;
 	}
 	
@@ -1044,7 +1044,7 @@ footer{
 		margin-bottom: 40px;
 	}
 	
-	.header-content h2{
+	.header-content h1{
 		font-size: 26px;
 	}
 	
