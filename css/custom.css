@@ -26,14 +26,14 @@
 
 @font-face {
   font-family: 'ProximaNova';
-  font-display: auto;
+  font-display: fallback;
   src: local('ProximaNova'), url('../fonts/ProximaNova.woff2') format('woff2'),
   	   local('ProximaNova'), url('../fonts/ProximaNova.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	font-display: auto;
+	font-display: fallback;
 	src: local('ProximaNova'), url('../fonts/montserrat.woff2') format('woff2'),
   	     local('ProximaNova'), url('../fonts/montserrat.woff') format('woff');
 }
