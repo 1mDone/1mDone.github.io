@@ -34,8 +34,8 @@
 @font-face {
 	font-family: 'Montserrat';
 	font-display: auto;
-	src: local('ProximaNova'), url('../fonts/Montserrat.woff2') format('woff2'),
-  	     local('ProximaNova'), url('../fonts/Montserrat.woff') format('woff');
+	src: local('ProximaNova'), url('../fonts/montserrat.woff2') format('woff2'),
+  	     local('ProximaNova'), url('../fonts/montserrat.woff') format('woff');
 }
 
 body{
