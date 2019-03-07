@@ -26,16 +26,16 @@
 
 @font-face {
   font-family: 'ProximaNova';
-  font-display: fallback;
+  font-display: auto;
   src: local('ProximaNova'), url('../fonts/ProximaNova.woff2') format('woff2'),
   	   local('ProximaNova'), url('../fonts/ProximaNova.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Montserrat';
-	font-display: fallback;
-	src: local('ProximaNova'), url('../fonts/montserrat.woff2') format('woff2'),
-  	     local('ProximaNova'), url('../fonts/montserrat.woff') format('woff');
+	font-display: auto;
+	src: local('Montserrat'), url('../fonts/montserrat.woff2') format('woff2'),
+  	     local('Montserrat'), url('../fonts/montserrat.woff') format('woff');
 }
 
 body{
@@ -44,7 +44,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
-.font-loaded body {
+.fonts-loaded body {
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -59,7 +59,7 @@ h6{
 	font-weight: 700;
 }
 
-.font-loaded h1,
+.fonts-loaded h1,
 h2,
 h3,
 h4,

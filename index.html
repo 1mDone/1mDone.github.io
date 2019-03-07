@@ -975,12 +975,13 @@
 		    if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
 		        return;
 		    }
+
 		    var ProximaNova = new w.FontFaceObserver( "ProximaNova");
 		    var Montserrat = new w.FontFaceObserver( "Montserrat");
 		    w.Promise
 		        .all([ProximaNova.load(), Montserrat.load()])
 		        .then(function(){
-		            w.document.documentElement.className += " fonts-loaded";
+		            w.document.documentElement.className += " fonts-loaded ";
 		        });
 		}( this ));
 	</script>
