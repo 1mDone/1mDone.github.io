@@ -49,7 +49,7 @@
 	<!-- Animated css -->
 	<link rel="preload" href="css/animate.css" as="style" onload="this.rel='stylesheet'">
 	<!-- Main custom css -->
-	<link rel="preload" href="css/custom.min.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="css/custom.css" as="style" onload="this.rel='stylesheet'">
 	<!-- Loader css -->
 	<style type="text/css">
 		.preloader{
@@ -968,20 +968,23 @@
 	</footer>
 	<!-- Footer section ends -->
 
-	<!-- Loading Google Fonts-->
-	<script type="text/javascript">
-		WebFontConfig = {
-			google: { families: [ 'Montserrat:300,400,500,600,700,800,900' ] }
-		};
-		(function() {
-			var wf = document.createElement('script');
-			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = 'true';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(wf, s);
-	 	})(); 
+	<!-- Loading Fonts Async -->
+	<script src="js/fontfaceobserver.min.js"></script>
+	<script>
+		(function( w ){
+		    if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+		        return;
+		    }
+		    var ProximaNova = new w.FontFaceObserver( "ProximaNova");
+		    var Montserrat = new w.FontFaceObserver( "Montserrat");
+		    w.Promise
+		        .all([ProximaNova.load(), Montserrat.load()])
+		        .then(function(){
+		            w.document.documentElement.className += " fonts-loaded";
+		        });
+		}( this ));
 	</script>
+
 
 	<!-- Fix Styles For Firefox -->
 	<script type="text/javascript">
