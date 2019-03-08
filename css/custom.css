@@ -279,7 +279,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	top: 0px;
 	left: 0;
 	width: 100%;
-	background-size: auto 100%;
+	background-size: 100%;
 	padding: 200px 0 100px;
 	background: url(../images/header.webp) no-repeat bottom left;
 }
