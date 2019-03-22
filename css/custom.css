@@ -281,11 +281,6 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	width: 100%;
 	background-size: 100%;
 	padding: 200px 0 100px;
-	background: url(../images/header.webp) no-repeat bottom left;
-}
-
-.no-webp .banner {
-	background: url(../images/header.png) no-repeat bottom left;
 }
 
 
@@ -387,6 +382,8 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 
 .header-image{
 	text-align: center;
+	width: 250px;
+	height: 340px;
 }
 
 /*******************************************/
