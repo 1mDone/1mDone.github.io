@@ -381,9 +381,9 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 }
 
 .header-image{
-	text-align: center;
-	width: 250px;
-	height: 340px;
+	max-width: 250px;
+    max-height: 340px;
+    margin: 10px auto 20px;
 }
 
 /*******************************************/
