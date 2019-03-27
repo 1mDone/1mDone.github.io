@@ -852,6 +852,11 @@ h2 span{
 	user-select: none;
 }
 
+.input-number:disabled {
+	background-color: #fff;
+	color: #000;
+}
+
 .input-number {
 	border-right: none;
 	border-left: none;
