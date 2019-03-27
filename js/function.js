@@ -37,7 +37,7 @@
 	});
 
 	/* SmoothScroll init  */
-	var scroll = new SmoothScroll('a[href*="#"]');
+	var scroll = new SmoothScroll('a[href*="#"]:not([class*="accordion"])');
 
 	/* Animate with wow js */
     new WOW({mobile:false}).init(); 
