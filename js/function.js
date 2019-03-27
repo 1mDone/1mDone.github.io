@@ -36,6 +36,9 @@
 		}
 	});
 
+	/* SmoothScroll init  */
+	var scroll = new SmoothScroll('a[href*="#"]');
+
 	/* Animate with wow js */
     new WOW({mobile:false}).init(); 
 
@@ -86,3 +89,4 @@
 })(jQuery);
 
 inputNumber($('.input-number'));
+
