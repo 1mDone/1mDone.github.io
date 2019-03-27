@@ -178,7 +178,8 @@
 				<div class="col-md-7 col-sm-8">
 					<div class="header-content wow fadeInUp">
 						<h1>
-							<span>Hi, Honey! Мёд в СПБ</span></h1>
+							<span>Hi, Honey! Мёд в СПБ</span>
+						</h1>
 						
 						<p>Мёд - это полезный десерт на каждый день. Древний чудодейственный нектар теперь доступен для каждого стола. Мед с молоком на ночь, мед с лимоном и корицей по утру - выберите свой вариант с экологически чистым, натуральным башкирским медом от Hi, Honey! Мед с доставкой в СПб на Hi, Honey!</p>
 						
@@ -749,7 +750,7 @@
 						<h2>
 							<span>Спасибо за заказ!</span>
 						</h2>
-						<p>Если у вас есть какие-либо вопросы, напишите нам <a href="mailto:me@hihoney.ru">me@hihoney.ru</a></p>
+						<p>Если у вас есть какие-либо вопросы, напишите нам <a href="mailto:me@hihoney.ru">me@hihoney.ru</a>!</p>
 					</div>
 					
 					<!-- Contact Form start -->
@@ -760,31 +761,52 @@
 								<div class="order">
 									<div class="form-group col-md-12 col-sm-12">
 										<input type="text" name="name" id="name" class="form-control" placeholder="Имя" required>
-										<div class="help-block with-errors"></div>
 									</div>
 									
 									<div class="form-group col-md-6 col-sm-6">
 										<input type="email" name="email" id="email" class="form-control" placeholder="Электронная почта" required>
-										<div class="help-block with-errors"></div>
 									</div>
 
 									<div class="form-group col-md-6 col-sm-6">
 										<input type="tel" name="phone" id="phone" class="form-control" placeholder="Телефон для связи" required>
-										<div class="help-block with-errors"></div>
 									</div>
 
 									<div class="form-group col-md-12 col-sm-12">
 										<input type="text" name="address" id="address" class="form-control" placeholder="Адрес доставки" required>
-										<div class="help-block with-errors"></div>
 									</div>
 									
-									<div class="form-group col-md-6 col-sm-6">
-										<input type="number" name="quantity" id="quantity" class="form-control" placeholder="Количество мёда в кг." min="1" max="25" required>
-										<div class="help-block with-errors"></div>
+									<div class="form-group col-md-8 col-sm-8 col-xs-7 quantity-label">
+										<p><b>Количество мёда (в кг.)</b></p>
 									</div>
 
+									<div class="form-group col-md-4 col-sm-4 col-xs-5">
+											<span class="pull-right"><span class="input-number-decrement">–</span><input class="input-number" type="text" name="quantity" id="quantity" value="1" min="1" max="25" disabled><span class="input-number-increment">+</span></span>
+									</div>
+
+									<div class="form-group col-md-12 col-sm-12">
+										<hr>
+									</div>
+
+									<div class="form-group col-md-8 col-sm-8 col-xs-8">
+										<div class="h3 total-price">
+											<p>Цена:</p>
+										</div>
+									</div>
+
+									<div class="form-group col-md-4 col-sm-4 col-xs-4">
+										<div class="h3 total-price">
+											<span class="pull-right">
+												<p><b class="price-tag">750 ₽<b></p>
+											</span>
+										</div>	
+									</div>
+
+									
+
 									<div class="col-md-12 col-sm-12">
-										<button type="submit" class="btn-contact" title="Заказать!">Заказать</button>
+										<span class="pull-right">
+											<button type="submit" class="btn-contact" title="Заказать!">Заказать</button>
+										</span>
 									</div>
 								</div>
 
