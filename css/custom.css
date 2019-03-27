@@ -396,7 +396,10 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 
 .section-title{
 	text-align: center;
-	margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    max-width: 750px;
 }
 
 .section-title h2{
@@ -405,7 +408,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 	line-height: 1.4em;
 }
 
-.section-title h2 span{
+h2 span{
 	background-image: linear-gradient(120deg, #ffc600 0%, #ffc600 100%);
 	background-repeat: no-repeat;
 	background-size: 100% 0.15em;
@@ -839,7 +842,7 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 .btn-contact:focus,
 .btn-contact:hover{
 	outline: 0;
-	background: #242424;
+	color: #fff;
 }
 
 .country-box{
@@ -849,6 +852,10 @@ nav.bootsnav.navbar-full .navbar-collapse .wrap-full-menu{
 
 .country-box img{
 	width: 100%;
+}
+
+.thank-you-image {
+	margin: 20px;
 }
 
 .country-box:before{
@@ -950,9 +957,19 @@ footer{
 	color: #f7a401;
 }
 
+
 /************************************/
 /*****    12. Media Screens     *****/
 /************************************/
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
 
 @media only screen and (max-width: 1200px){
 	.header-social{

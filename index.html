@@ -183,7 +183,10 @@
 						
 						<p>Мёд - это полезный десерт на каждый день. Древний чудодейственный нектар теперь доступен для каждого стола. Мед с молоком на ночь, мед с лимоном и корицей по утру - выберите свой вариант с экологически чистым, натуральным башкирским медом от Hi, Honey! Мед с доставкой в СПб на Hi, Honey!</p>
 						
-						<a href="#" class="btn-shopnow">Купить</a>
+						<!-- <a href="#" class="btn-shopnow">Купить</a> -->
+						<button class="btn btn-shopnow" data-toggle="modal" data-target="#order-modal">
+							Купить
+						</button>
 					</div>
 				</div>
 				<!-- Banner Content end -->
@@ -439,7 +442,7 @@
 				<div class="col-md-12">
 					<div class="section-title wow fadeInUp">
 						<h2><span>Часто задаваемые вопросы</span></h2>
-						<p>Возможно, у вас появились вопросы. Здесь мы собрали ответ на самые частые из них. Если вы не нашли ответ на ваш вопрос <br />позвоните нам или напишите в форме ниже!</p>
+						<p>Возможно, у вас появились вопросы. Здесь мы собрали ответ на самые частые из них. Если вы не нашли ответ на ваш вопрос позвоните нам или <a href="mailto:me@hihoney.ru">напишите нам</a>!</p>
 					</div>
 				</div>
 			</div>
@@ -450,7 +453,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<div class="faq-category wow fadeInLeft">
-									<h3>Ваши опросы о мёде:</h3>
+									<h3>Ваши вопросы о мёде:</h3>
 								</div>
 							</div>
 							
@@ -514,7 +517,7 @@
 						<div class="row">
 							<div class="col-md-3">
 								<div class="faq-category wow fadeInLeft">
-									<h3>Мёд и здоровье:</h3>
+									<h3>Здоровье и мёд:</h3>
 								</div>
 							</div>
 							
@@ -575,69 +578,7 @@
 							</div>
 						</div>
 						
-						<div class="row">
-							<div class="col-md-3">
-								<div class="faq-category wow fadeInLeft">
-									<h3>Support :</h3>
-								</div>
-							</div>
-							
-							<div class="col-md-9">
-								<div class="faq-single faq-last">
-									<!-- FAQ Accordion starts -->
-									<div class="panel-group faq-container" id="accordion2">
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title"><a href="#collapse9" data-toggle="collapse" data-parent="#accordion2">How to use Honey product?</a></h4>
-											</div>
-											
-											<div id="collapse9" class="panel-collapse collapse in">
-												<div class="panel-body">
-													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-												</div>
-											</div>
-										</div>
-										
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title collapsed"><a href="#collapse10" data-toggle="collapse" data-parent="#accordion2">What’s rules for dail dose?</a></h4>
-											</div>
-											
-											<div id="collapse10" class="panel-collapse collapse">
-												<div class="panel-body">
-													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-												</div>
-											</div>
-										</div>
-										
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title collapsed"><a href="#collapse11" data-toggle="collapse" data-parent="#accordion2">What’s best time to take organic honey?</a></h4>
-											</div>
-											
-											<div id="collapse11" class="panel-collapse collapse">
-												<div class="panel-body">
-													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-												</div>
-											</div>
-										</div>
-										
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title collapsed"><a href="#collapse12" data-toggle="collapse" data-parent="#accordion2">Lorem ispum more question goes here?</a></h4>
-											</div>
-											
-											<div id="collapse12" class="panel-collapse collapse">
-												<div class="panel-body">
-													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- FAQ Accordion ends -->
-								</div>
-							</div>
-						</div>
+						
 						
 					</div>
 				</div>
@@ -809,43 +750,57 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title wow fadeInUp">
-						<h2><span>Напишите нам!</span></h2>
-						<p>Call us at 0 100 240 88 83, Mail us at sales@domainname.com</p>
+						<h2>
+							<span>Спасибо за заказ!</span>
+						</h2>
+						<p>Если у вас есть какие-либо вопросы, напишите нам <a href="mailto:me@hihoney.ru">me@hihoney.ru</a></p>
 					</div>
 					
 					<!-- Contact Form start -->
 					<div class="contact-form">
 						<form id="contactForm" action="#" method="post" data-toggle="validator">
 							<div class="row">
-								<div class="form-group col-md-6 col-sm-6">
-									<input type="text" name="name" id="name" class="form-control" placeholder="Ваше имя" required>
-									<div class="help-block with-errors"></div>
-								</div>
 								
-								<div class="form-group col-md-6 col-sm-6">
-									<input type="email" name="email" id="email" class="form-control" placeholder="Лучший.клиент@yourmail.com" required>
-									<div class="help-block with-errors"></div>
+								<div class="order">
+									<div class="form-group col-md-12 col-sm-12">
+										<input type="text" name="name" id="name" class="form-control" placeholder="Имя" required>
+										<div class="help-block with-errors"></div>
+									</div>
+									
+									<div class="form-group col-md-6 col-sm-6">
+										<input type="email" name="email" id="email" class="form-control" placeholder="Электронная почта" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="form-group col-md-6 col-sm-6">
+										<input type="tel" name="phone" id="phone" class="form-control" placeholder="Телефон для связи" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="form-group col-md-12 col-sm-12">
+										<input type="text" name="address" id="address" class="form-control" placeholder="Адрес доставки" required>
+										<div class="help-block with-errors"></div>
+									</div>
+									
+									<div class="form-group col-md-6 col-sm-6">
+										<input type="number" name="quantity" id="quantity" class="form-control" placeholder="Количество мёда в кг." min="1" max="25" required>
+										<div class="help-block with-errors"></div>
+									</div>
+
+									<div class="col-md-12 col-sm-12">
+										<button type="submit" class="btn-contact" title="Заказать!">Заказать</button>
+									</div>
 								</div>
-								
-								<div class="form-group col-md-6 col-sm-6">
-									<input type="text" name="phone" id="phone" class="form-control" placeholder="Телефон для связи" required>
-									<div class="help-block with-errors"></div>
+
+								<div class="order-successful hidden">
+									<div class="col-md-12 col-sm-12">
+										<div id="msgSubmit" class="h4 text-center ">
+											<img src="images/thank-you.svg" width="230" height="230" class="thank-you-image" alt="Hi, Honey! Мёд купить в СПБ. ">
+											<p>В течение 20-30 минут с вами свяжется менеджер для уточнения деталей.</p>
+										</div>
+									</div>
 								</div>
-								
-								<div class="form-group col-md-6 col-sm-6">
-									<input type="text" name="subject" id="subject" class="form-control" placeholder="Тема сообщения" required>
-									<div class="help-block with-errors"></div>
-								</div>
-								
-								<div class="form-group col-md-12 col-sm-12">
-									<textarea rows="6" name="message" id="message" class="form-control" placeholder="Расскажите нам, в чем дело" required></textarea>
-									<div class="help-block with-errors"></div>
-								</div>
-								
-								<div class="col-md-12 col-sm-12">
-									<button type="submit" class="btn-contact" title="Submit Your Message!">Отправить</button>
-									<div id="msgSubmit" class="h3 text-left hidden"></div>
-								</div>
+
 							</div>
 						</form>
 					</div>
@@ -853,7 +808,7 @@
 				</div>
 			</div>
 			
-			<div class="row">
+			<div class="row hidden">
 				
 				<div class="col-md-6">
 					<!-- Contact info single start -->
