@@ -818,6 +818,15 @@ h2 span{
 	margin: 0 auto 60px;
 }
 
+.contact-form p {
+	margin: 25px 0;
+	font-size: 12px;
+	line-height: 1.8em;
+	color: #7c7c7c;
+	text-align: center;
+}
+
+
 .contact-form .form-control{
 	box-shadow: none;
 	border-radius: 0;
@@ -826,6 +835,10 @@ h2 span{
 	height: auto;
 	padding: 10px 14px;
 	resize: none;
+}
+
+.subscribe-button {
+	text-align: center;
 }
 
 .quantity-label {

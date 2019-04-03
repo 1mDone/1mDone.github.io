@@ -3,6 +3,11 @@
 	
 	var $window = $(window); 
 	var $body = $('body'); 
+
+	window.fnames = new Array(); 
+	window.ftypes = new Array();
+	fnames[0]='EMAIL';
+	ftypes[0]='email';
 	
 	/* Preloader Effect */
 	$window.load(function() {
@@ -89,4 +94,25 @@
 })(jQuery);
 
 inputNumber($('.input-number'));
+var $mcj = jQuery.noConflict(true);
 
+
+$(document).ready(() => {
+  checkIfStyleChanged();
+});
+
+function checkIfStyleChanged() {
+    if ($('#mce-success-response').attr('style') != 'display:none') {
+		$('.order').addClass('hidden');
+		$('.order-successful').removeClass('hidden');
+  	}
+
+  	if ($('#mce-error-response').attr('style') != 'display:none') {
+		$('.order').addClass('hidden'); 
+		$('.order-unsuccessful').removeClass('hidden');
+  	}
+
+  	setTimeout(() => {
+        checkIfStyleChanged();
+    }, 50); 
+}
